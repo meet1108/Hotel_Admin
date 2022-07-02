@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0" />
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   
+    <link type="text/css" rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="./css/add_offer.css">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <script src="https://kit.fontawesome.com/f376d890ef.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <section id="sidebar">
+        <div class="sidebar-brand">
+            <h2>
+                <a href="index.html" style="font-family: 'Raleway', sans-serif; color: #fff;">
+                    <i class="fa fa-desktop"></i> 
+                    <span>OM-Hotel</span>
+                </a>
+            </h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a></li>
+                <li><a href="add_property.html"><i class="fa fa-home"aria-hidden="true"></i><span>Add Property</span></a></li>
+                <li><a href="add_rooms.html"><i class="fa-solid fa-door-open"></i><span>Add Room</span></a></li>
+                <li><a href="customers.html"><i class="fa fa-users"></i><span>Customers</span></a></li>
+                <li><a href="add_offer.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span>Add Offer</span></a></li>
+                <li><a href="gallery.html"><i class="fa fa-photo"></i> <span>Photos</span></a></li>
+                <li><a href="#"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <Section id="main-content">
+        <header>
+            <div class="header-left">
+                <h2 class="toggle-btn">
+                    <i class="fa fa-bars"></i> Add Offer
+                </h2>
+            </div>
+            <!-- <div class="header-left header-serach">
+                <div class="serach-par">
+                    <input class="rounded-5" type="text" placeholder="Search Here...">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div> -->
+            <div class="header-left header-profile">
+                <img src="images/user.png" class="img-responsive" />
+                <h3>m33t_m</h3>
+                <p>Admin</p>
+            </div>
+            <div class="clear"></div>
+        </header>
+        <div class="clear"></div>
+        <div class="main-content-info container">
+            <div class="form col-xl-9 m-auto px-5 py-3">
+                <h3 style="color: #FF5252; font-weight: 900;">Add Offer</h3>
+                <form class="row g-3 d-flex">
+                    <span class="title mt-4">Offer Details</span>
+                    <div class="row my-2">
+                        <div class="col-md-12">
+                            <div class="my-2">
+                                <label for="inputEmail4" class="form-label">Offer Name</label>
+                                <input type="text" class="form-control" placeholder="Holi Offer" id="inputEmail4" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-2">
+                        <div class="col-md-6">
+                            <div class="my-2">
+                                <label for="inputEmail4" class="form-label">Start Date</label>
+                                <input type="date" name="date" id="date" required>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="my-2">
+                                <label for="inputEmail4" class="form-label">End Date</label>
+                                <input type="date" name="date" id="date" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row my-2">
+                        <div class="col-md-6">
+                            <div class="my-2">
+                                <label for="inputEmail4" class="form-label">Discount</label>
+                                <input type="text" class="form-control" placeholder="20 %" id="inputEmail4">
+
+                                <!-- <select required>
+                                    <option disabled selected>Select</option>
+                                    <option>Ac</option>
+                                    <option>Non Ac</option>
+                                </select> -->
+                            </div>
+                        </div>
+                        <div class="col-md-6 cols-2">
+                            <div class="my-2">
+                                <label for="inputEmail4" class="form-label">Discount Rate</label>
+                                <input type="number" class="form-control" placeholder="&#8377; 3000 " id="inputEmail4">
+
+                                <!-- <select required>
+                                    <option disabled selected>Select</option>
+                                    <option>Pending</option>
+                                    <option>Booked</option>
+                                </select> -->
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <div class="my-2">
+                                <label for="inputEmail4" class="form-label">Location</label>
+                                <input type="text" class="form-control" placeholder="Nearest Location" id="inputEmail4" required>
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="row my-2 address">
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Extra Details</label>
+                            <textarea type="text" placeholder="Facilities" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-4 align-self-end" style="align-items: center; text-align: center;">
+                        <button type="submit" class="button btn">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </Section>
+    <div class="clear"></div>
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/external.js"></script> -->
+</body>
+
+</html>

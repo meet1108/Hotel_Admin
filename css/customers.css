@@ -1,0 +1,28 @@
+.main-content-info{
+    padding-top: 110px;
+    padding-bottom: 40px;
+}
+
+.main-content-info .cust-details{
+    box-shadow: 0 0 10px #000;
+}
+
+.edit-btn .fa-pencil-square{
+    color: green;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.edit-btn .fa-trash{
+    color: red;
+    font-size: 18px;
+}
+
+.row{
+    width: 200px;
+    float: right;
+}
+
+table th, table td{
+    text-align: center;
+}

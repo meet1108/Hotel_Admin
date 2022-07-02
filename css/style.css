@@ -1,0 +1,163 @@
+/* ---------------------------------------------------------------- */
+
+.card {
+    float: left;
+    width: 21%;
+    height: 100px;
+    background: linear-gradient(45deg, #FF5252 0%, #f48fb1 100%);
+    box-shadow: 0 6px 20px 0 rgb(244 143 177 / 50%);
+    color: #fff;
+    margin-top: 120px;
+    margin-left: 2%;
+    padding: 25px;
+    margin-right: 2%;
+}
+
+h2.cus-num {
+    position: relative;
+}
+
+h2.cus-num:after {
+    position: absolute;
+    content: "\f0c0";
+    font-family: "FONTAWESOME";
+    right: 0;
+}
+
+h2.cus-pro:after {
+    position: absolute;
+    content: "\f52b";
+    font-family: "FONTAWESOME";
+    right: 0;
+}
+
+h2.cus-ord:after {
+    position: absolute;
+    content: "\f1c1";
+    font-family: "FONTAWESOME";
+    right: 0;
+}
+
+h2.cus-inc:after {
+    position: absolute;
+    content: "\f0d6";
+    font-family: "FONTAWESOME";
+    right: 0;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+.content-pro-par {
+    margin: 6% 2% 5% 2%;
+}
+
+.pro-table {
+    /* float: left; */
+    /* width: 68%; */
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #bbb;
+    padding: 15px;
+}
+
+.pro-table .edit-btn .fa-pencil-square{
+    color: green;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.pro-table .edit-btn .fa-trash{
+    color: red;
+    font-size: 18px;
+}
+
+.pro-table h2,.pro-cus h2{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pro-cus {
+    /* float: right; */
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px #bbb;
+    padding: 15px;
+}
+
+table th, table td{
+    text-align: center;
+}
+
+table td {
+    padding: 8px 0px;
+}
+
+table td {
+    padding: 20px 0px 0px 0px;
+}
+
+
+.see-all button {
+    background-color: #fd5c62;
+    color: #fff;
+    border: none;
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rec-pro-h {
+    float: left;
+}
+
+.see-all {
+    float: right;
+}
+
+.recent-project {
+    margin-bottom: 20px;
+}
+
+img.table-img {
+    width: 35px;
+}
+
+td.cnt-info-td i {
+    color: #fd5c62;
+    padding-right: 8px;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+@media screen and (max-width :950px) {
+
+    .card {
+        width: 100%;
+        float: none;
+        margin: 0 auto 20px auto;
+        padding: 10px 20px;
+    }
+
+    .main-content-info {
+        margin-top: 130px;
+    }
+
+    h2.cus-num:after {
+        top: 10px;
+    }
+
+}
+
+@media screen and (max-width :993px) {
+
+.pro-cus {
+    width: 100%;
+    margin-top: 50px;
+}
+
+}
